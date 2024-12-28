@@ -1,0 +1,111 @@
+.display-image{
+    padding: 50px 0px;
+    position: relative;
+}
+
+.display-image > h1{
+    text-align: center;
+    padding: 0px 0px 50px;
+}
+
+.display-image > .images-gallery{
+    width:85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+}
+
+.display-image > .images-gallery > div{
+    position: relative;
+}
+
+.display-image > .images-gallery > div > img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.display-image > .images-gallery > .item1{
+    grid-area: 1 / 1 / span 2 / span 2;
+}
+
+.display-image > .images-gallery > .item1 > .gallery-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.display-image > .images-gallery > div > .gallery-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0,0.5);
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.display-image > .images-gallery > div > .gallery-content:hover{
+    background-color: rgb(0,0,0,0.3);
+}
+
+.display-image > .images-gallery > div > .gallery-content:hover a{
+    text-decoration: underline;
+} 
+
+.display-image > .images-gallery > .item1 > .gallery-content > a{
+    padding-top: calc(50% - 250px / 2) ;
+}
+
+.display-image > .images-gallery > div > .gallery-content > a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    color: #FFFFFF;
+    padding-top: calc(50% - 150px / 2) ;
+}
+
+/* media query starts from here */
+
+@media only screen and (max-width:350px){
+    .display-image > .images-gallery > .item1 > .gallery-content > a {
+        padding-top: calc(50% - 200px / 2);
+    }
+}
+
+@media (min-width:350px) and (max-width:450px){
+    .display-image > .images-gallery > .item1 > .gallery-content > a {
+        padding-top: calc(50% - 190px / 2);
+    }
+    .display-image > .images-gallery > div:nth-child(5) > .gallery-content > a{
+        padding-top: calc(50% - 190px / 2);
+    }
+}
+
+@media only screen and (max-width:600px){
+    .display-image > .images-gallery {
+        grid-template-columns: auto;
+    }
+    .display-image > .images-gallery > .item1 {
+        grid-area: 1 / 1 / span 1 / span 1;
+    }
+}
+
+@media (min-width:601px) and (max-width:950px){
+    .display-image > .images-gallery {
+        grid-template-columns: auto auto;
+    }
+    .display-image > .images-gallery > .item1 {
+        grid-area: 1 / 1 / span 1 / span 1;
+    }
+    .display-image > .images-gallery > .item1 > .gallery-content > a {
+        padding-top: calc(50% - 150px / 2);
+    }
+}

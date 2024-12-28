@@ -1,0 +1,358 @@
+.apart{
+    background-image: url(../images/background1.jpg);
+    background-size: 100% 100%;
+}
+
+.about-container{
+    width: 70%;
+    margin: auto;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.about-container > h1{ 
+    text-align: center;
+    margin-bottom: 50px; 
+}
+
+.about-container > img{
+    position: absolute;
+    width: 20%;
+    left: 41%;
+    top: 74px;
+}
+
+.about-container > p{
+    font-size: 19px;
+    text-align: justify;
+    border-radius: 20px;
+    padding: 40px;
+    letter-spacing: 0.2px;
+}
+
+.vision > h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.vision > h2:before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 47.5%;
+    width: 80px;
+    height: 5px;
+    background-color: #701010;
+}
+
+.vision > p{
+    width: 60%;
+    margin: auto;
+    text-align: justify;
+    text-align-last:center ;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.mission > h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.mission > h2:before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 47.5%;
+    width: 88px;
+    height: 5px;
+    background-color: #701010;
+}
+
+.mission > p{
+    width: 60%;
+    margin: auto;
+    text-align: justify;
+    text-align-last:center ;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.core-values{
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.core-values > h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.core-values > .value-container{
+    width: 80%;
+    margin: auto;
+    border-radius: 20px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.core-values > .value-container > .value > h4{
+    font-weight: bold;
+}
+.core-values > .value-container > .value{
+    box-shadow: 0px 0px 15px #666666;
+    border-radius: 20px;
+    width: 365px;
+    text-align: center;
+    padding: 10px;
+}
+
+.core-values > .value-container > .value > p{
+    text-align: justify;
+    text-align-last: center;
+    letter-spacing: 1.5;
+}
+
+.youtube-container{
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.youtube-container > h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.youtube-container > .videos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin:auto;
+    gap: 20px;
+    justify-content: center;
+}
+
+.youtube-container > .videos > div{
+    width:390px;
+}
+
+.youtube-container > .videos > div > iframe{
+    width:100%;
+}
+
+.team-con{
+    position: relative;
+}
+
+.team-con h1{
+    text-align: center;
+}
+
+.teamContainer {
+    width: 80%;
+	display: flex;
+	position: relative; 
+    align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+    padding-bottom: 50px;
+    margin: auto;
+}
+
+.teamContainer .box {
+	position: relative;
+    margin: 3rem;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.teamContainer .box .content{
+    background-color: #666666;
+    color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(52, 49, 49);
+}
+
+.teamContainer .box .content h2{
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+}
+
+.teamContainer .box:hover .imgBox {
+    transform: translate(-1.0rem, -1.0rem);
+}
+
+.teamContainer .box:hover .content{
+    transform: translate(2.0rem, 2.0rem);
+}
+
+.imgBox {
+	position: absolute;
+	top: 0;
+	Left: 0;
+    width: 100%;
+	height: 100%;
+	z-index: 2;
+	transition: all 0.5s ease-in-out; 
+    border-radius: 10px; 
+}
+
+.imgBox img {
+	width: 100%;
+    object-fit: cover; 
+    resize: both;
+	height: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(52, 49, 49);
+    transition: filter 0.5s ease-in-out;
+}
+
+
+/* media query starts from here */
+
+@media only screen and (max-width:460px){
+    .teamContainer {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:350px){
+    .teamContainer .box .content h2 {
+        font-size: 21px;
+    }
+}
+
+@media (min-width:551px) and (max-width:800px){
+    .teamContainer .box {
+        width: 22rem;
+        height: 20rem;
+    }
+}
+
+@media (min-width:801px) and (max-width:900px){
+    .teamContainer .box .content h2 {
+        font-size: 25px;
+    }
+    .teamContainer .box {
+        width: 14rem;
+        height: 14rem;
+    }
+    .youtube-container > .videos > div {
+        width: 500px;
+    }
+}
+
+@media (min-width:901px) and (max-width:968px){
+    .teamContainer .box {
+        width: 16rem;
+        height: 16rem;
+    }
+}
+
+@media (min-width:1201px) and (max-width:1300px){
+    .teamContainer .box .content h2 {
+        font-size: 25px;
+    }
+    .teamContainer .box {
+        width: 14rem;
+        height: 14rem;
+    }
+}
+
+@media (min-width:1301px) and (max-width:1450px){
+    .teamContainer .box .content h2 {
+        font-size: 25px;
+    }
+    .teamContainer .box {
+        width: 15rem;
+        height: 15rem;
+    }
+}
+
+@media only screen and (max-width:1100px){
+    .about-container {
+        width: 100%;
+    }
+    .vision > p {
+        width: 80%;
+    }
+    .mission > p {
+        width: 80%;
+    }
+}
+
+@media (min-width:1101px) and (max-width:1300px){
+    .about-container {
+        width: 80%;
+    }
+    .vision > p {
+        width: 70%;
+    }
+    .mission > p {
+        width: 70%;
+    }
+}
+
+@media (min-width:550px) and (max-width:750px){
+    .core-values > .value-container > .value {
+        width: 450px;
+    }
+}
+
+@media (min-width:751px) and (max-width:840px){
+    .core-values > .value-container > .value {
+        width: 275px;
+    }
+}
+
+@media (min-width:841px) and (max-width:900px){
+    .core-values > .value-container > .value {
+        width: 310px;
+    }
+}
+
+@media (min-width:901px) and (max-width:1000px){
+    .core-values > .value-container > .value {
+        width: 335px;
+    }
+    .youtube-container > .videos > div {
+        width: 600px;
+    }
+}
+
+@media (min-width:1201px) and (max-width:1300px){
+    .core-values > .value-container > .value {
+        width: 287px;
+    }
+}
+
+@media (min-width:1301px) and (max-width:1350px){
+    .core-values > .value-container > .value {
+        width: 313px;
+    }
+}
+
+@media (min-width:1351px) and (max-width:1495px){
+    .core-values > .value-container > .value {
+        width: 326px;
+    }
+}
+
